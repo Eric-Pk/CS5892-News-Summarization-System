@@ -1,5 +1,5 @@
 # CS5892-News-Summarization-System
-Demo:https://huggingface.co/spaces/liamvbetts/bart-news-summary-v1<img width="468" height="13" alt="image" src="https://github.com/user-attachments/assets/b8397053-d53d-4ed1-b98f-b0d4edf862b8" />
+Demo:https://huggingface.co/spaces/liamvbetts/bart-news-summary-v1
 Poster: 
 ## 项目目标
 - Continual Learning in News Summarization（基于持续学习的新闻摘要模型）
