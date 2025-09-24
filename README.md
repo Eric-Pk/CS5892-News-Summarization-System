@@ -57,7 +57,8 @@ Poster:
 以ROUGE为核心指标，重点关注：
 - ROUGE-1：1-gram重叠率，反映摘要准确性（关键名词是否正确）。
 - ROUGE-L：最长公共子序列重叠率，反映摘要完整性（是否覆盖新闻核心事件）。
-六、工程落地与Web服务
+
+## 工程落地与Web服务
 1. 自动化训练与模型管理
 - 训练调度：用Colab实现每日定时训练，自动加载前一日模型权重，接入当日新增数据。
 - 模型管理：训练完成后，模型以“时间戳+周期名”（如“20240319-Period3”）命名，自动上传至Hugging Face Hub，同时清理本地目录（释放约10GB空间）。
@@ -70,7 +71,7 @@ Poster:
 - 响应速度保障：
   - 模型推理优化：将推理精度从fp32改为fp16，速度提升50%。
   - 缓存与扩容：缓存24小时内相同新闻的摘要结果，Google Cloud负载均衡支持高并发时自动扩容，响应时间≤3秒/次。
-七、相关工作
+## 持续学习常见技术
 - 正则化类：如EWC（Elastic Weight Consolidations），通过损失函数惩罚项保护旧知识。
 - 复述类：如Rehearsal（混入旧数据）、Deep Generative Replay（生成旧数据伪样本），让模型复习旧知识。
 - 其他技术：Gradient Episodic Memory（梯度 episodic 记忆）、Progressive Neural Networks（渐进式神经网络）。
