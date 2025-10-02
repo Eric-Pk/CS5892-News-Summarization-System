@@ -1,6 +1,8 @@
 # CS5892-News-Summarization-System
 Demo:https://huggingface.co/spaces/liamvbetts/bart-news-summary-v1
-Poster: 
+
+Poster: 见Poster for ML.pdf
+
 ## 项目目标
 - Continual Learning in News Summarization（基于持续学习的新闻摘要模型）
 - 技术目标：将持续学习技术应用于T5-small模型，解决新闻摘要任务中的“灾难性遗忘”问题（模型学习新数据后丢失旧领域知识），同时适配新闻数据的“概念漂移”（如人物实体、话题、语义风格随时间变化）。
